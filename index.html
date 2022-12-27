@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Чтобы небыло горизонтального скролла -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cofee shop</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/videotube.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wraper">
+    <header class="header">
+      <div class="header__bg">
+        <div class="container">
+          <div class="header__content">
+            <a class="header__logo" href="#">
+              <img class="logo" src="images/logo.png" alt="Logo">
+            </a>
+            <div class="header__video">
+              <div class="header__video-img">
+                <img src="images/revo-video-bg.jpg" alt="Revo coffee">
+              </div>
+              <a class="header__video-btn tube" href="https://youtu.be/gYk45wG7o_Q">
+                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5456 7L0.776363 13.75V0.25L11.5456 7Z" fill="#C7A17A" />
+                </svg>
+              </a>
+            </div>
+            <nav class="header__nav">
+              <a class="header__shop-cart" href="##">
+                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2.08011 1.66388H15.4516C15.4919 1.66388 15.5287 1.67932 15.5664 1.69091L15.8951 0.589594C15.9996 0.239363 16.3164 0 16.6754 0H18.3071C18.5324 0 18.715 0.186249 18.715 0.41598V1.2479C18.715 1.47763 18.5324 1.66388 18.3071 1.66388H17.2797L14.7309 10.2046L15.6829 11.337C16.0591 11.7846 16.2285 12.4013 16.0553 12.9637C15.8339 13.683 15.2113 14.1429 14.4935 14.1429H2.80593C2.58064 14.1429 2.39799 13.9566 2.39799 13.7269V12.895C2.39799 12.6652 2.58064 12.479 2.80593 12.479H14.4936L13.2005 10.9406C13.168 10.9019 13.144 10.8583 13.1194 10.8151H5.21443C4.58216 10.8151 4.0068 10.4428 3.73756 9.8594L0.890982 3.69125C0.809333 3.51374 0.76631 3.31673 0.76631 3.12131V3.0035C0.76631 2.26369 1.35453 1.66388 2.08011 1.66388Z" fill="#F9FBFF" />
+                  <path d="M13.9073 18.0001C13.0223 18.0001 12.3048 17.2805 12.3048 16.3929C12.3048 15.5053 13.0223 14.7858 13.9073 14.7858C14.7924 14.7858 15.5099 15.5053 15.5099 16.3929C15.5099 17.2805 14.7924 18.0001 13.9073 18.0001Z" fill="white" />
+                  <path d="M4.29197 18.0001C3.4069 18.0001 2.6894 17.2805 2.6894 16.3929C2.6894 15.5053 3.4069 14.7858 4.29197 14.7858C5.17704 14.7858 5.89453 15.5053 5.89453 16.3929C5.89453 17.2805 5.17704 18.0001 4.29197 18.0001Z" fill="white" />
+                </svg>
+                <span>2</span>
+              </a>
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="##">TRANG CHỦ</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="##">COFFEE</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="##">PHIN MẠ MÀU</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="##">COMBO PHIN PHÊ</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="##">GIFTSET</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="##">LIÊN HỆ</a></li>
+              </ul>
+            </nav>
+            <h1 class="header__title">YOUR <span>PERSONALIZED</span> COFFEE</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="personal-coffee">
+        <div class="container">
+          <h4 class="personal-coffee__subtitle subtitle">Your Personalized Coffee</h4>
+          <h2 class="personal-coffee__title title">COFFEE BUILD YOUR BASE</h2>
+          <div class="personal-coffee__inner">
+            <div class="personal-coffee__item">
+              <img class="personal-coffee__item--img" src="images/source.svg" alt="Source">
+              <h3 class="personal-coffee__item--title">Nguồn gốc</h3>
+              <p class="personal-coffee__item--desc">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</p>
+            </div>
+            <div class="personal-coffee__item">
+              <img class="personal-coffee__item--img" src="images/quality.svg" alt="Quality">
+              <h3 class="personal-coffee__item--title">Chất lượng</h3>
+              <p class="personal-coffee__item--desc">Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ nhân cà phê.</p>
+            </div>
+            <div class="personal-coffee__item">
+              <img class="personal-coffee__item--img" src="images/nuts.svg" alt="Nuts">
+              <h3 class="personal-coffee__item--title">Các loại hạt</h3>
+              <p class="personal-coffee__item--desc">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green bean.</p>
+            </div>
+            <div class="personal-coffee__item">
+              <img class="personal-coffee__item--img" src="images/preparation.svg" alt="Preparation">
+              <h3 class="personal-coffee__item--title">Pha chế</h3>
+              <p class="personal-coffee__item--desc">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và nghiêm ngặt.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="favorite">
+        <div class="favorite__bg">
+          <div class="container">
+            <h4 class="favorite__subtitle subtitle">Choose Your Favorite</h4>
+            <h2 class="favorite__title title">CHUẨN GU ĐÚNG VỊ</h2>
+            <div class="favorite__gallery main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "freeScroll": true }'>
+              <div class="favorite__cell gallery-cell">
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-morning.png" alt="REVO Morning">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">99.000</h4>
+                    <h3 class="favorite__card--title">REVO Morning</h3>
+                    <p class="favorite__card--desc">đắng, hậu ngọt, hương hoa</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-everyday.png" alt="REVO Everyday">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">85.000</h4>
+                    <h3 class="favorite__card--title">REVO Everyday</h3>
+                    <p class="favorite__card--desc">cân bằng, hậu đắng, vị chocolate </p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-origin.png" alt="REVO Origin">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">139.000</h4>
+                    <h3 class="favorite__card--title">REVO Origin</h3>
+                    <p class="favorite__card--desc">hậu ngọt, ít đắng, vị chua dâu</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-Đậm-Đà.png" alt="REVO Đậm Đà">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">75.000</h4>
+                    <h3 class="favorite__card--title">REVO Đậm Đà</h3>
+                    <p class="favorite__card--desc">đắng, hậu ngọt, hương hoa</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite__cell gallery-cell">
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-honey.png" alt="REVO Honey">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">195.000</h4>
+                    <h3 class="favorite__card--title">REVO Honey</h3>
+                    <p class="favorite__card--desc">độ ngọt cao, hậu ngọt, chua họ táo</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-morning.png" alt="REVO Morning">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">99.000</h4>
+                    <h3 class="favorite__card--title">REVO Morning</h3>
+                    <p class="favorite__card--desc">đắng, hậu ngọt, hương hoa</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-natural.png" alt="REVO Natural">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">169.000</h4>
+                    <h3 class="favorite__card--title">REVO Natural</h3>
+                    <p class="favorite__card--desc">hậu ngọt, hương hoa, vị chua dâu</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorite__card">
+                  <div class="favorite__card--picture">
+                    <img src="images/revo-origin.png" alt="REVO Origin">
+                  </div>
+                  <div class="favorite__card--content">
+                    <h4 class="favorite__card--price">139.000</h4>
+                    <h3 class="favorite__card--title">REVO Origin</h3>
+                    <p class="favorite__card--desc">hậu ngọt, ít đắng, vị chua dâu</p>
+                    <div class="favorite__card--click">
+                      <a class="favorite__card--buying" href="##">MUA NGAY</a>
+                      <a class="favorite__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gift">
+        <div class="gift__bg">
+          <div class="container">
+            <h4 class="gift__subtitle subtitle">Best Gift For Best Friend</h4>
+            <h2 class="gift__title title">GIFTSET</h2>
+            <div class="gift__inner">
+              <ul class="gift__tabs tabs" role="tablist">
+                <li class="gift__item">
+                  <input type="radio" name="tabs" id="tab1" checked />
+                  <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" tabindex="0">
+                    <h2>1</h2>
+                  </label>
+                  <div id="tab-content1" class="gift__content" role="tabpanel" aria-labelledby="1" aria-hidden="false">
+                    <div class="gift__content--picture">
+                      <img src="images/giftset-1.png" alt="Giftset">
+                      <span>1</span>
+                    </div>
+                    <div class="gift__content--inner">
+                      <h4 class="gift__content--price">285.000</h4>
+                      <h3 class="gift__content--title">Giftset "Cà phê phin Việt Nam"</h3>
+                      <p class="gift__content--desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+                      <p class="gift__content--desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu.</p>
+                      <div class="gift__content--quality">
+                        <div class="gift__content--type">
+                          <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99469 18.9842C6.74561 15.1554 6.74029 11.175 6.96892 9.32288C1.6998 11.8303 -1.45317 17.2134 0.668305 22.0386C3.16728 22.2877 6.67117 21.5296 8.99469 18.9842Z" fill="#415167" />
+                            <path d="M9.57423 19.9104C7.52188 22.0875 3.99672 23.3168 1.30634 23.1543C3.76278 26.7015 10.2973 28.2612 16.1832 24.8386C13.663 24.2266 11.2863 22.4395 9.57423 19.9104Z" fill="#415167" />
+                            <path d="M15.7313 11.9603C12.2114 8.06111 11.919 4.34061 12.4029 1.89819C8.76604 3.98319 6.99017 9.32835 8.41512 14.7764C10.0049 21.0043 15.6568 25.7159 20.9579 23.3438C21.1227 21.5946 20.9047 17.6683 15.7313 11.9603Z" fill="#415167" />
+                            <path d="M25.5251 10.1894C23.9088 3.98314 18.512 -0.305992 13.5992 1.35117C12.8814 3.68528 12.9824 7.43827 16.5341 11.2617C18.1452 13.1571 22.1276 17.6466 22.0531 22.7318C25.3178 20.4356 26.8437 15.3667 25.5251 10.1894Z" fill="#415167" />
+                          </svg>
+                          <p>Loại hạt<span>Fine Robusta Blend</span></p>
+                        </div>
+                        <div class="gift__content--type">
+                          <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0193 1.39404C13.8589 1.11733 13.5115 0.982458 13.2456 0.954834C12.9273 0.960028 12.6374 1.13811 12.4864 1.4209L9.375 7.24549L11.0068 9.11612L12.5155 6.68297C12.8364 6.16591 13.6838 6.16591 14.0047 6.68297L15.5135 9.11607L17.2852 7.03748L14.0193 1.39404Z" fill="#415167" />
+                            <path d="M18.75 9.59615L18.2335 8.70215L16.152 11.2304C15.9802 11.4679 15.7313 11.623 15.4102 11.5927C15.1192 11.5823 14.8522 11.4262 14.6977 11.1767L13.2451 8.83054L11.7925 11.1767C11.638 11.4263 11.371 11.5823 11.08 11.5927C11.0689 11.5936 11.0577 11.5936 11.0474 11.5936C10.7675 11.5936 10.504 11.4592 10.3382 11.2304L8.44351 8.96136L0.104626 24.4857C-0.0413052 24.7604 -0.0344482 25.0933 0.124376 25.361C0.283201 25.6297 0.569965 25.7935 0.878999 25.7935H10.7786C10.5262 25.0756 10.5704 24.2742 10.9485 23.5982L18.75 9.59615Z" fill="#415167" />
+                            <path d="M21.9508 10.3034C21.6387 9.7454 20.7246 9.7454 20.4124 10.3034L18.5742 13.5865L21.1816 16.4494L23.7891 13.5865L21.9508 10.3034Z" fill="#415167" />
+                            <path d="M29.8866 24.4724L24.6612 15.2075L21.8278 18.383C21.6605 18.5847 21.4133 18.7016 21.1524 18.7016C20.8915 18.7016 20.6443 18.5847 20.4769 18.383L17.6436 15.2075L12.4767 24.4725C12.3231 24.7469 12.3257 25.0828 12.4836 25.3547C12.6415 25.6265 12.9298 25.7935 13.2422 25.7935H29.121C29.4334 25.7935 29.7218 25.6265 29.8797 25.3546C30.0376 25.0827 30.0402 24.7469 29.8866 24.4724Z" fill="#415167" />
+                          </svg>
+                          <p>Độ cao<span>700 - 800m</span></p>
+                        </div>
+                      </div>
+                      <div class="gift__content--click">
+                        <a class="gift__content--buying" href="##">MUA NGAY</a>
+                        <a class="gift__content--info underline" href="##">CHI TIẾT</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="gift__item">
+                  <input type="radio" name="tabs" id="tab2" />
+                  <label for="tab2" role="tab" aria-selected="true" aria-controls="panel2" tabindex="0">
+                    <h2>2</h2>
+                  </label>
+                  <div id="tab-content2" class="gift__content" role="tabpanel" aria-labelledby="2" aria-hidden="false">
+                    <div class="gift__content--picture">
+                      <img src="images/giftset-1.png" alt="Giftset">
+                      <span>2</span>
+                    </div>
+                    <div class="gift__content--inner">
+                      <h4 class="gift__content--price">385.000</h4>
+                      <h3 class="gift__content--title">Giftset "Cà phê phin Việt Nam"</h3>
+                      <p class="gift__content--desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+                      <div class="gift__content--quality">
+                        <div class="gift__content--type">
+                          <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99469 18.9842C6.74561 15.1554 6.74029 11.175 6.96892 9.32288C1.6998 11.8303 -1.45317 17.2134 0.668305 22.0386C3.16728 22.2877 6.67117 21.5296 8.99469 18.9842Z" fill="#415167" />
+                            <path d="M9.57423 19.9104C7.52188 22.0875 3.99672 23.3168 1.30634 23.1543C3.76278 26.7015 10.2973 28.2612 16.1832 24.8386C13.663 24.2266 11.2863 22.4395 9.57423 19.9104Z" fill="#415167" />
+                            <path d="M15.7313 11.9603C12.2114 8.06111 11.919 4.34061 12.4029 1.89819C8.76604 3.98319 6.99017 9.32835 8.41512 14.7764C10.0049 21.0043 15.6568 25.7159 20.9579 23.3438C21.1227 21.5946 20.9047 17.6683 15.7313 11.9603Z" fill="#415167" />
+                            <path d="M25.5251 10.1894C23.9088 3.98314 18.512 -0.305992 13.5992 1.35117C12.8814 3.68528 12.9824 7.43827 16.5341 11.2617C18.1452 13.1571 22.1276 17.6466 22.0531 22.7318C25.3178 20.4356 26.8437 15.3667 25.5251 10.1894Z" fill="#415167" />
+                          </svg>
+                          <p>Loại hạt<span>Fine Robusta Blend</span></p>
+                        </div>
+                        <div class="gift__content--type">
+                          <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0193 1.39404C13.8589 1.11733 13.5115 0.982458 13.2456 0.954834C12.9273 0.960028 12.6374 1.13811 12.4864 1.4209L9.375 7.24549L11.0068 9.11612L12.5155 6.68297C12.8364 6.16591 13.6838 6.16591 14.0047 6.68297L15.5135 9.11607L17.2852 7.03748L14.0193 1.39404Z" fill="#415167" />
+                            <path d="M18.75 9.59615L18.2335 8.70215L16.152 11.2304C15.9802 11.4679 15.7313 11.623 15.4102 11.5927C15.1192 11.5823 14.8522 11.4262 14.6977 11.1767L13.2451 8.83054L11.7925 11.1767C11.638 11.4263 11.371 11.5823 11.08 11.5927C11.0689 11.5936 11.0577 11.5936 11.0474 11.5936C10.7675 11.5936 10.504 11.4592 10.3382 11.2304L8.44351 8.96136L0.104626 24.4857C-0.0413052 24.7604 -0.0344482 25.0933 0.124376 25.361C0.283201 25.6297 0.569965 25.7935 0.878999 25.7935H10.7786C10.5262 25.0756 10.5704 24.2742 10.9485 23.5982L18.75 9.59615Z" fill="#415167" />
+                            <path d="M21.9508 10.3034C21.6387 9.7454 20.7246 9.7454 20.4124 10.3034L18.5742 13.5865L21.1816 16.4494L23.7891 13.5865L21.9508 10.3034Z" fill="#415167" />
+                            <path d="M29.8866 24.4724L24.6612 15.2075L21.8278 18.383C21.6605 18.5847 21.4133 18.7016 21.1524 18.7016C20.8915 18.7016 20.6443 18.5847 20.4769 18.383L17.6436 15.2075L12.4767 24.4725C12.3231 24.7469 12.3257 25.0828 12.4836 25.3547C12.6415 25.6265 12.9298 25.7935 13.2422 25.7935H29.121C29.4334 25.7935 29.7218 25.6265 29.8797 25.3546C30.0376 25.0827 30.0402 24.7469 29.8866 24.4724Z" fill="#415167" />
+                          </svg>
+                          <p>Độ cao<span>700 - 800m</span></p>
+                        </div>
+                      </div>
+                      <div class="gift__content--click">
+                        <a class="gift__content--buying" href="##">MUA NGAY</a>
+                        <a class="gift__content--info underline" href="##">CHI TIẾT</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="gift__item">
+                  <input type="radio" name="tabs" id="tab3" />
+                  <label for="tab3" role="tab" aria-selected="true" aria-controls="panel3" tabindex="0">
+                    <h2>3</h2>
+                  </label>
+                  <div id="tab-content3" class="gift__content" role="tabpanel" aria-labelledby="3" aria-hidden="false">
+                    <div class="gift__content--picture">
+                      <img src="images/giftset-1.png" alt="Giftset">
+                      <span>3</span>
+                    </div>
+                    <div class="gift__content--inner">
+                      <h4 class="gift__content--price">485.000</h4>
+                      <h3 class="gift__content--title">Giftset "Cà phê phin Việt Nam"</h3>
+                      <p class="gift__content--desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng.</p>
+                      <p class="gift__content--desc">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.</p>
+                      <div class="gift__content--quality">
+                        <div class="gift__content--type">
+                          <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.99469 18.9842C6.74561 15.1554 6.74029 11.175 6.96892 9.32288C1.6998 11.8303 -1.45317 17.2134 0.668305 22.0386C3.16728 22.2877 6.67117 21.5296 8.99469 18.9842Z" fill="#415167" />
+                            <path d="M9.57423 19.9104C7.52188 22.0875 3.99672 23.3168 1.30634 23.1543C3.76278 26.7015 10.2973 28.2612 16.1832 24.8386C13.663 24.2266 11.2863 22.4395 9.57423 19.9104Z" fill="#415167" />
+                            <path d="M15.7313 11.9603C12.2114 8.06111 11.919 4.34061 12.4029 1.89819C8.76604 3.98319 6.99017 9.32835 8.41512 14.7764C10.0049 21.0043 15.6568 25.7159 20.9579 23.3438C21.1227 21.5946 20.9047 17.6683 15.7313 11.9603Z" fill="#415167" />
+                            <path d="M25.5251 10.1894C23.9088 3.98314 18.512 -0.305992 13.5992 1.35117C12.8814 3.68528 12.9824 7.43827 16.5341 11.2617C18.1452 13.1571 22.1276 17.6466 22.0531 22.7318C25.3178 20.4356 26.8437 15.3667 25.5251 10.1894Z" fill="#415167" />
+                          </svg>
+                          <p>Loại hạt<span>Fine Robusta Blend</span></p>
+                        </div>
+                        <div class="gift__content--type">
+                          <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0193 1.39404C13.8589 1.11733 13.5115 0.982458 13.2456 0.954834C12.9273 0.960028 12.6374 1.13811 12.4864 1.4209L9.375 7.24549L11.0068 9.11612L12.5155 6.68297C12.8364 6.16591 13.6838 6.16591 14.0047 6.68297L15.5135 9.11607L17.2852 7.03748L14.0193 1.39404Z" fill="#415167" />
+                            <path d="M18.75 9.59615L18.2335 8.70215L16.152 11.2304C15.9802 11.4679 15.7313 11.623 15.4102 11.5927C15.1192 11.5823 14.8522 11.4262 14.6977 11.1767L13.2451 8.83054L11.7925 11.1767C11.638 11.4263 11.371 11.5823 11.08 11.5927C11.0689 11.5936 11.0577 11.5936 11.0474 11.5936C10.7675 11.5936 10.504 11.4592 10.3382 11.2304L8.44351 8.96136L0.104626 24.4857C-0.0413052 24.7604 -0.0344482 25.0933 0.124376 25.361C0.283201 25.6297 0.569965 25.7935 0.878999 25.7935H10.7786C10.5262 25.0756 10.5704 24.2742 10.9485 23.5982L18.75 9.59615Z" fill="#415167" />
+                            <path d="M21.9508 10.3034C21.6387 9.7454 20.7246 9.7454 20.4124 10.3034L18.5742 13.5865L21.1816 16.4494L23.7891 13.5865L21.9508 10.3034Z" fill="#415167" />
+                            <path d="M29.8866 24.4724L24.6612 15.2075L21.8278 18.383C21.6605 18.5847 21.4133 18.7016 21.1524 18.7016C20.8915 18.7016 20.6443 18.5847 20.4769 18.383L17.6436 15.2075L12.4767 24.4725C12.3231 24.7469 12.3257 25.0828 12.4836 25.3547C12.6415 25.6265 12.9298 25.7935 13.2422 25.7935H29.121C29.4334 25.7935 29.7218 25.6265 29.8797 25.3546C30.0376 25.0827 30.0402 24.7469 29.8866 24.4724Z" fill="#415167" />
+                          </svg>
+                          <p>Độ cao<span>700 - 800m</span></p>
+                        </div>
+                      </div>
+                      <div class="gift__content--click">
+                        <a class="gift__content--buying" href="##">MUA NGAY</a>
+                        <a class="gift__content--info underline" href="##">CHI TIẾT</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="combo">
+        <div class="combo__bg">
+          <div class="container">
+            <h4 class="combo__subtitle subtitle">Your Personalized Coffee</h4>
+            <h2 class="combo__title title">COMBO PHIN PHÊ</h2>
+            <div class="combo__gallery main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true, "freeScroll": true }'>
+              <div class="combo__cell gallery-cell">
+                <div class="combo__card">
+                  <div class="combo__card--picture">
+                    <img src="images/combo-revo-Đậm-Đà.png" alt="Combo Revo Đậm Đà">
+                  </div>
+                  <div class="combo__card--content">
+                    <div class="combo__card--block-price">
+                      <h4 class="combo__card--price">147.000</h4>
+                      <p class="combo__card--oldprice">155.000</p>
+                    </div>
+                    <h3 class="combo__card--title">Combo Revo Đậm Đà</h3>
+                    <p class="combo__card--desc">Hàm lượng caffein trong Revo Đậm Đà đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+                    <div class="combo__card--click">
+                      <a class="combo__card--buying" href="##">MUA NGAY</a>
+                      <a class="combo__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="combo__card">
+                  <div class="combo__card--picture">
+                    <img src="images/combo-revo-everyday.png" alt="Combo Revo Everyday">
+                  </div>
+                  <div class="combo__card--content">
+                    <div class="combo__card--block-price">
+                      <h4 class="combo__card--price">156.000</h4>
+                      <p class="combo__card--oldprice">165.000</p>
+                    </div>
+                    <h3 class="combo__card--title">Combo Revo Everyday</h3>
+                    <p class="combo__card--desc">Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và hương thơm...</p>
+                    <div class="combo__card--click">
+                      <a class="combo__card--buying" href="##">MUA NGAY</a>
+                      <a class="combo__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="combo__card">
+                  <div class="combo__card--picture">
+                    <img src="images/combo-revo-honey.png" alt="Combo Revo Honey">
+                  </div>
+                  <div class="combo__card--content">
+                    <div class="combo__card--block-price">
+                      <h4 class="combo__card--price">275.000</h4>
+                      <p class="combo__card--oldprice">260.000</p>
+                    </div>
+                    <h3 class="combo__card--title">Combo Revo Honey</h3>
+                    <p class="combo__card--desc">Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến hạt Arabica...</p>
+                    <div class="combo__card--click">
+                      <a class="combo__card--buying" href="##">MUA NGAY</a>
+                      <a class="combo__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="combo__cell gallery-cell">
+                <div class="combo__card">
+                  <div class="combo__card--picture">
+                    <img src="images/combo-revo-natural.png" alt="Combo Revo Natural">
+                  </div>
+                  <div class="combo__card--content">
+                    <div class="combo__card--block-price">
+                      <h4 class="combo__card--price">249.000</h4>
+                      <p class="combo__card--oldprice">236.000</p>
+                    </div>
+                    <h3 class="combo__card--title">Combo Revo Natural</h3>
+                    <p class="combo__card--desc">Natural – trong tên gọi Revo Honey đến từ phương pháp chế biến hạt Arabica... </p>
+                    <div class="combo__card--click">
+                      <a class="combo__card--buying" href="##">MUA NGAY</a>
+                      <a class="combo__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="combo__card">
+                  <div class="combo__card--picture">
+                    <img src="images/combo-revo-honey.png" alt="Combo Revo Honey">
+                  </div>
+                  <div class="combo__card--content">
+                    <div class="combo__card--block-price">
+                      <h4 class="combo__card--price">275.000</h4>
+                      <p class="combo__card--oldprice">260.000</p>
+                    </div>
+                    <h3 class="combo__card--title">Combo Revo Honey</h3>
+                    <p class="combo__card--desc">Honey – trong tên gọi Revo Honey đến từ phương pháp chế biến hạt Arabica...</p>
+                    <div class="combo__card--click">
+                      <a class="combo__card--buying" href="##">MUA NGAY</a>
+                      <a class="combo__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="combo__card">
+                  <div class="combo__card--picture">
+                    <img src="images/combo-revo-everyday.png" alt="Combo Revo Everyday">
+                  </div>
+                  <div class="combo__card--content">
+                    <div class="combo__card--block-price">
+                      <h4 class="combo__card--price">156.000</h4>
+                      <p class="combo__card--oldprice">165.000</p>
+                    </div>
+                    <h3 class="combo__card--title">Combo Revo Everyday</h3>
+                    <p class="combo__card--desc">Revo Everyday được phối trộn giữa vị đắng của hạt Robusta và hương thơm...</p>
+                    <div class="combo__card--click">
+                      <a class="combo__card--buying" href="##">MUA NGAY</a>
+                      <a class="combo__card--info underline" href="##">CHI TIẾT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copy">
+          <p>© Revo Coffee Việt Nam - 2022</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/flickity.pkgd.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/videotube.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
